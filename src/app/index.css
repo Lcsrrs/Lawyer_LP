@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 30% 15%;
+
+    --card: 40 25% 98%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 220 40% 18%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 40 40% 92%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 40 70% 50%;
+    --accent-foreground: 220 40% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 40 70% 50%;
+
+    --radius: 0.5rem;
+
+    --whatsapp: 142 70% 40%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    --hero-overlay: linear-gradient(135deg, hsla(220, 40%, 12%, 0.92), hsla(220, 40%, 18%, 0.75));
+    --gold-gradient: linear-gradient(135deg, hsl(40, 70%, 50%), hsl(35, 80%, 58%));
+    --shadow-elegant: 0 10px 40px -10px hsla(220, 40%, 12%, 0.15);
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 40 20% 92%;
+    --card: 220 30% 12%;
+    --card-foreground: 40 20% 92%;
+    --popover: 220 30% 12%;
+    --popover-foreground: 40 20% 92%;
+    --primary: 40 70% 50%;
+    --primary-foreground: 220 30% 8%;
+    --secondary: 220 25% 16%;
+    --secondary-foreground: 40 20% 92%;
+    --muted: 220 25% 16%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 40 70% 50%;
+    --accent-foreground: 220 30% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 40 70% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+} */
+
+@layer components {
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300;
+    background-color: hsl(var(--whatsapp));
+    color: hsl(var(--whatsapp-foreground));
+    box-shadow: 0 4px 20px hsla(142, 70%, 40%, 0.3);
+  }
+  .btn-whatsapp:hover {
+    background-color: hsl(142, 70%, 35%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px hsla(142, 70%, 40%, 0.4);
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 rounded-full;
+    background: var(--gold-gradient);
+  }
+
+  .floating-whatsapp {
+    @apply fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300;
+    background-color: hsl(var(--whatsapp));
+    box-shadow: 0 6px 24px hsla(142, 70%, 40%, 0.4);
+    animation: pulse-whatsapp 2s infinite;
+  }
+  .floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 32px hsla(142, 70%, 40%, 0.5);
+  }
+
+  @keyframes pulse-whatsapp {
+    0%, 100% { box-shadow: 0 6px 24px hsla(142, 70%, 40%, 0.4); }
+    50% { box-shadow: 0 6px 36px hsla(142, 70%, 40%, 0.6); }
+  }
+}
+
