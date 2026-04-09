@@ -5,6 +5,7 @@ import { PracticeAreas } from "./_components/PracticeAreas";
 import { Testimonials } from "./_components/Testimonials";
 import { CTASection } from "./_components/CTASection";
 import { Footer } from "./_components/Footer";
+import { About } from "./_components/About";
 
 export default function Home() {
   return(
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Stats />
       <PracticeAreas />
+      <About />
       <Testimonials />
       <CTASection />
       <Footer/>
