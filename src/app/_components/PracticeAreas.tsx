@@ -4,12 +4,12 @@ import WhatsAppIcon from "./WhatsAppIcon";
 const WHATSAPP_URL = "https://wa.me/556293927788";
 
 const areas = [
-  { icon: Shield, title: "Direito Penal", desc: "Defesa em processos penais, acompanhamento de inquérito em sede policial e recurso e defesa legal." },
-  { icon: Users, title: "Direito de Família", desc: "Divórcios, guarda, pensões, sucessões, inventário, judicial e extrajudicial e assuntos familiares." },
-  { icon: Building2, title: "Direito Civil", desc: "Contratos, propriedade, responsabilidade civil e mais." },
-  { icon: FileText, title: "Direito Trabalhista", desc: "Demissões injustificadas, rescisões e conflitos trabalhistas." },
-  { icon: Scale, title: "Direito Empresarial", desc: "Constituição de empresas, contratos comerciais." },
-  { icon: Landmark, title: "Direito Bancário", desc: "Revisional de contrato (juros abusivos), defesa em busca e apreensão." },
+  { icon: Shield, title: "Direito Penal", desc: "Defesa em Processos Penais, Acompanhamento de Inquérito em Sede Policial, Recurso e Defesa Legal." },
+  { icon: Users, title: "Direito de Família", desc: "Divórcios, Guarda, Pensões, Sucessões, Inventários (judicial e extrajudicial)" },
+  { icon: Building2, title: "Direito Civil", desc: "Contratos, Propriedade, Responsabilidade Civil." },
+  { icon: FileText, title: "Direito Trabalhista", desc: "Demissões Injustificadas, Rescisões e Conflitos Trabalhistas." },
+  { icon: Scale, title: "Direito Empresarial", desc: "Constituição de Empresas, Contratos Comerciais." },
+  { icon: Landmark, title: "Direito Bancário", desc: "Revisional de Contrato (juros abusivos), Defesa em Busca e Apreensão." },
 ];
 
 export function PracticeAreas() {
@@ -37,7 +37,7 @@ export function PracticeAreas() {
       <div className="text-center">
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
           <WhatsAppIcon />
-          Precisa de ajuda? Contate-nos!
+          Precisa de ajuda? <br></br>Contate-nos!
         </a>
       </div>
     </div>
