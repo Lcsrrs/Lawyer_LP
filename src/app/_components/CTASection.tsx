@@ -10,11 +10,11 @@ export function CTASection() {
         Tem algum problema legal?
       </h2>
       <p className="text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-        Não espere mais, sua primeira consulta é <span className="text-accent font-semibold">100% gratuita</span>. Contate-nos pelo WhatsApp e te responderemos em 24h.
+        Não espere mais, faça sua <span className="text-accent font-semibold">primeira consulta</span>. Contate-nos pelo WhatsApp e te responderemos em 24h.
       </p>
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp text-xl px-12 py-5">
         <WhatsAppIcon className="w-7 h-7" />
-        Consulta Grátis Agora
+        Consulte Agora
       </a>
     </div>
   </section>

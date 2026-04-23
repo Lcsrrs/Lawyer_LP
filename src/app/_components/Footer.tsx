@@ -5,7 +5,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div>
           <div className="text-2xl font-bold font-display text-background">Jonildo Reis</div>
-          <p className="text-background/60 text-sm mt-1">Advogados de confiança</p>
+          <p className="text-background/60 text-sm mt-1">Advocacia de confiança</p>
         </div>
         <div className="text-background/50 text-sm">
           © {new Date().getFullYear()} Jonildo Reis. Todos os direitos reservados.

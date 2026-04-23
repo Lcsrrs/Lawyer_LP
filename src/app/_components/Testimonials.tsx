@@ -1,9 +1,9 @@
 import { Star } from "lucide-react";
 
 const testimonials = [
-  { name: "María García", text: "Resolveu meu caso de guarda de forma rápida e profissional. Muito agradecida.", area: "Direito de Família" },
-  { name: "Carlos Rodríguez", text: "Excelente advogado. Me ajudou com minha demissão injustificada e obtive a melhor rescisão.", area: "Direito Trabalhista" },
-  { name: "Ana López", text: "Confiável, honesto e sempre disponível. Recomendo amplamente.", area: "Direito Penal" },
+  { name: "Maria Garcia", text: "Resolveu meu caso de guarda de forma rápida e profissional. Muito agradecida.", area: "Direito de Família" },
+  { name: "Carlos Alberto", text: "Excelente advogado. Me ajudou com minha demissão injustificada e obtive a melhor rescisão.", area: "Direito Trabalhista" },
+  { name: "Ana Lopes", text: "Confiável, honesto e sempre disponível. Recomendo amplamente.", area: "Direito Penal" },
 ];
 
 export function Testimonials() {
@@ -18,7 +18,7 @@ export function Testimonials() {
         {testimonials.map((t) => (
           <div key={t.name} className="bg-card p-8 rounded-xl border border-border" style={{ boxShadow: "var(--shadow-elegant)" }}>
             <div className="flex gap-1 mb-4">
-              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-accent text-accent" />)}
+              {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-yellow-500 text-yellow-500" />)}
             </div>
             <p className="text-foreground mb-6 leading-relaxed italic">"{t.text}"</p>
             <div>

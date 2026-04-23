@@ -1,5 +1,5 @@
 const stats = [
-  { value: "15+", label: "Anos de experiência" },
+  { value: "20+", label: "Anos de experiência" },
   { value: "2,500+", label: "Casos resolvidos" },
   { value: "98%", label: "Clientes stisfeitos" },
   { value: "24h", label: "Tempo de resposta" },
